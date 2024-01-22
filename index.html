@@ -1,13 +1,163 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head data-theme="light">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwind & daisyui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- font awsome -->
+    <script src="https://kit.fontawesome.com/14e2ece024.js" crossorigin="anonymous"></script>
+    <style>
+        .font-manrope {
+            font-family: 'Manrope', sans-serif;
+        }
+
+        .text-primary {
+            color: #FF4240;
+        }
+
+        .text-secondary {
+            color: #131318;
+        }
+
+        .text-gray {
+            color: rgba(19, 19, 24, 0.6);
+        }
+    </style>
     <title>Hockey's</title>
 </head>
-<body>
-    <header></header>
-    <main></main>
+
+<body class="font-manrope">
+    <header class="mx-5 lg:mx-32 mb-16 lg:mb-24">
+        <!-- navbar -->
+        <nav class="navbar bg-base-100 my-10">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a class="text-primary font-bold">Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost font-extrabold text-2xl lg:text-4xl">Hockey<span
+                        class="text-[#FF4240]">'</span>s</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a class="text-primary font-bold">Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Pages</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <i class="fa-solid fa-magnifying-glass text-gray mr-4 hidden lg:block"></i>
+                <a class="btn font-bold bg-[#FF4240] text-white py-4 px-6">Get Ticket</a>
+            </div>
+        </nav>
+        <!-- banner section -->
+        <section class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full h-[50%]">
+                <img src="Images/1.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+                <img src="Images/sport-banner-silhouettes-hockey-players-260nw-2254045547.webp"
+                    class="w-full lg:h-[80vh]" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+                <img src="Images/pngtree-hockey-players-pose-for-an-image-in-a-field-on-the-image_2898966.jpg"
+                    class="w-full lg:h-[80vh]" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full">
+                <img src="Images/w03208-small.jpg" class="w-full lg:h-[80vh]" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main class="mx-5 lg:mx-32">
+        <!-- professional hockey club section -->
+        <section class="mb-16 lg:mb-24">
+            <div class="mb-10">
+                <h1 class="text-secondary text-center text-2xl lg:text-4xl font-extrabold mb-4 lg:mb-6">Professional
+                    Hockeys
+                    Club</h1>
+                <p class="mx-auto text-gray text-center w-full lg:w-[60%]">Welcome to our hockey club where there's
+                    nothing
+                    more
+                    magical
+                    than
+                    scoring your
+                    first goal in front of a
+                    cheering crowd.</p>
+            </div>
+            <div class="flex flex-col lg:flex-row">
+                <div class="lg:w-[300px] flex flex-col items-center mb-6">
+                    <div class="radial-progress text-red-500" style="--value:87;" role="progressbar">87%</div>
+                    <h3 class="text-secondary text-xl font-semibold my-4">Prayer Facility</h3>
+                    <p class="text-gray text-center w-[80%]">We have prayer facilities for player of different religous
+                        background.
+                    </p>
+                </div>
+                <div class="lg:w-[300px] flex flex-col items-center mb-6">
+                    <div class="radial-progress text-green-500" style="--value:95;" role="progressbar">95%</div>
+                    <h3 class="text-secondary text-xl font-semibold my-4">Experienced Coach</h3>
+                    <p class="text-gray text-center w-[80%]">We believe in the best! So we bring the best to teach our
+                        players.
+                    </p>
+                </div>
+                <div class="lg:w-[300px] flex flex-col items-center mb-6">
+                    <div class="radial-progress text-yellow-500" style="--value:90;" role="progressbar">90%</div>
+                    <h3 class="text-secondary text-xl font-semibold my-4">Senior Player</h3>
+                    <p class="text-gray text-center w-[80%]">Seniors lead the way & juniors follow. That's why we
+                        maintain that hiararchy.
+                    </p>
+                </div>
+                <div class="lg:w-[300px] flex flex-col items-center">
+                    <div class="radial-progress text-blue-500" style="--value:80;" role="progressbar">80%</div>
+                    <h3 class="text-secondary text-xl font-semibold my-4">Training Ground</h3>
+                    <p class="text-gray text-center w-[80%]">Discipline is the key to success. So we maintain our
+                        training grounds for our players all the time.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
     <footer></footer>
 </body>
+
 </html>
