@@ -74,43 +74,50 @@
             </div>
         </nav>
         <!-- banner section -->
-        <section class="carousel w-full">
-            <div id="slide1" class="carousel-item relative w-full h-[50%]">
-                <img src="Images/1.png" class="w-full" />
-                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide4" class="btn btn-circle">❮</a>
-                    <a href="#slide2" class="btn btn-circle">❯</a>
+        <section>
+            <div class="carousel w-full lg:relative">
+                <div id="slide1" class="carousel-item relative w-full h-[50%]">
+                    <img src="Images/1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="Images/sport-banner-silhouettes-hockey-players-260nw-2254045547.webp"
+                        class="w-full lg:h-[80vh]" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="Images/pngtree-hockey-players-pose-for-an-image-in-a-field-on-the-image_2898966.jpg"
+                        class="w-full lg:h-[80vh]" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                    <img src="Images/w03208-small.jpg" class="w-full lg:h-[80vh]" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
                 </div>
             </div>
-            <div id="slide2" class="carousel-item relative w-full">
-                <img src="Images/sport-banner-silhouettes-hockey-players-260nw-2254045547.webp"
-                    class="w-full lg:h-[80vh]" />
-                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide1" class="btn btn-circle">❮</a>
-                    <a href="#slide3" class="btn btn-circle">❯</a>
-                </div>
-            </div>
-            <div id="slide3" class="carousel-item relative w-full">
-                <img src="Images/pngtree-hockey-players-pose-for-an-image-in-a-field-on-the-image_2898966.jpg"
-                    class="w-full lg:h-[80vh]" />
-                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide2" class="btn btn-circle">❮</a>
-                    <a href="#slide4" class="btn btn-circle">❯</a>
-                </div>
-            </div>
-            <div id="slide4" class="carousel-item relative w-full">
-                <img src="Images/w03208-small.jpg" class="w-full lg:h-[80vh]" />
-                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide3" class="btn btn-circle">❮</a>
-                    <a href="#slide1" class="btn btn-circle">❯</a>
-                </div>
+            <div class="bg-black z-50 p-8  rounded-2xl lg:absolute lg:bottom-0 lg:right-44">
+                <h1 class="text-white font-extrabold">Meet all the heroes from the field</h1>
+                <p class="text-[#FFFFFF99]">Meet our very academy players, our pride, the very best in the country. Join
+                    now and learn from them.</p>
             </div>
         </section>
     </header>
     <main class="mx-5 lg:mx-32">
         <!-- professional hockey club section -->
         <section class="mb-16 lg:mb-24">
-            <div class="mb-10">
+            <div class="mb-10 border-y border-dashed py-7">
                 <h1 class="text-secondary text-center text-2xl lg:text-4xl font-extrabold mb-4 lg:mb-6">Professional
                     Hockeys
                     Club</h1>
@@ -161,10 +168,9 @@
         </section>
         <!-- program section -->
         <section class="mb-16 lg:mb-24">
-            <div class="mb-10">
-                <h1 class="text-secondary text-center text-2xl lg:text-4xl font-extrabold mb-4 lg:mb-6">Professional
-                    Hockeys
-                    Club</h1>
+            <div class="mb-10 border-y border-dashed py-7">
+                <h1 class="text-secondary text-center text-2xl lg:text-4xl font-extrabold mb-4 lg:mb-6">Program Sections
+                </h1>
                 <p class="mx-auto text-gray text-center w-full lg:w-[60%]">We have the best program selection process in
                     the country! We have the junior program for kids under 12, teenager program for teenagers between
                     the age of 12-16 & professional onwards. Find out now!
@@ -198,17 +204,16 @@
             <div class="relative">
                 <img src="Images/4.png" class="h-[210px] lg:h-full rounded-[12px]" alt="junior-hockey">
                 <div class="text-white absolute bottom-5 left-5 lg:bottom-14">
-                    <h1 class="font-extrabold text-xl lg:text-3xl">Teenagers Program</h1>
-                    <p class="font-medium text-sm lg:text-base w-[80%] my-3 lg:my-4">For kids from age 12-16. Join
-                        our
-                        teenager program to keep their momentum up & help them grow.</p>
+                    <h1 class="font-extrabold text-xl lg:text-3xl">Professional Program</h1>
+                    <p class="font-medium text-sm lg:text-base w-[80%] my-3 lg:my-4">For players who want to achieve
+                        greatness. Register now and become the very best version of yourself.</p>
                     <button class="btn btn-error text-white font-bold text-lg lg:text-xl">Register Now!</button>
                 </div>
             </div>
         </section>
         <!-- new products section -->
         <section class="mb-16 lg:mb-24">
-            <div class="mb-10">
+            <div class="mb-10 border-y border-dashed py-7">
                 <h1 class="text-secondary text-center text-2xl lg:text-4xl font-extrabold mb-4 lg:mb-6">Professional
                     Hockeys
                     Club</h1>
@@ -419,7 +424,7 @@
         </section>
         <!-- faq section -->
         <section class="mb-16 lg:mb-24">
-            <div class="mb-5 lg:mb-10">
+            <div class="mb-5 lg:mb-10 border-y border-dashed py-7">
                 <h1 class="text-secondary text-center text-2xl lg:text-4xl font-extrabold mb-4 lg:mb-6">Clients Question
                 </h1>
                 <p class="mx-auto text-gray text-center w-full lg:w-[60%]">Find the commonly asked questions in our FAQ.
@@ -497,7 +502,7 @@
         </section>
         <!-- get in touch section -->
         <section class="mb-16 lg:mb-24">
-            <div class="mb-5 lg:mb-10">
+            <div class="mb-5 lg:mb-10 border-y border-dashed py-7">
                 <h1 class="text-secondary text-center text-2xl lg:text-4xl font-extrabold mb-4 lg:mb-6">Clients Question
                 </h1>
                 <p class="mx-auto text-gray text-center w-full lg:w-[60%]">Find the commonly asked questions in our FAQ.
